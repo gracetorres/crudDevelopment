@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="funcionesIniciales()">
+    <input id="posicion"type="hidden">
+    <input id="inpNombre" type="text">nombre
+    <input id="inpPrecio" type="text">precio
+    <button id="botonAgregar" onclick="agregarProducto()">agregar</button>
+    <button id="botonEditar" onclick="editarrProducto()">editar</button>
+    <br>
+    <br>
+    <table border="1" cellspacing="1" width="100%" >
+        <thead>
+            <th>nombre</th>
+            <th>precio</th>
+            <th>editar</th>
+            <th>eliminar</th>
+        </thead>
+        <tbody id="table">
+           
+        </tbody>
+    </table>
+
+    <script src="js.js"></script>
+</body>
+</html>
